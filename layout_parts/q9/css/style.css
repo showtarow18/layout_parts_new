@@ -2,4 +2,98 @@
 
 /* 回答はここに書いてね */
 
+/*9-1 ここから*/
+
+.image_wrap {
+  width: 500px;
+  margin: 0 auto;
+  height: 333px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.image_wrap img {
+  transition-duration: 0.5s;
+}
+
+.image_wrap:hover img{
+  transform: scale(1.5);
+}
+
+.text_wrap {
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,8));
+  width: 500px;
+  height: 333px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 333px;
+  left: 0;
+  transition: 0.5s;
+}
+
+.image_wrap:hover .text_wrap {
+  transform: translate(0,-333px);
+}
+
+.text_wrap p {
+  color: #fff;
+  height:293px;
+  font-size: 16px;
+  line-height: 16px;
+  display: table-cell;
+  vertical-align: bottom;
+  word-break: break-all;
+}
+
+/*9-1 ここまで*/
+
+
+/*9-2 ここから*/
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.q9_contents {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #ecf1f2;
+  border-radius: 50%;
+  position: relative;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  background-color: #00bcd4;
+  border-radius: 100px 0 0 0;
+}
+
+.loader_wrap {
+  width: 100px;
+  height: 100px;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.center_circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
 /* 回答はここに書いてね */

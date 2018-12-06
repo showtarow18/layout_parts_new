@@ -2,4 +2,44 @@
 
 /* 回答はここに書いてね */
 
+.textbox {
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  border: solid 5px #222;
+  border-radius: 30px;
+  position: relative;
+}
+
+.textbox:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: solid 5px #222;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: -19px;
+  left: 35px;
+  background-color: #fff;
+}
+
+.textbox:after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  border: solid 5px #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: -13px;
+  left: 37px;
+  background-color: #fff;
+}
+
+.textbox p {
+  font-size: 16px;
+  line-height: 16px;
+}
+
 /* 回答はここに書いてね */

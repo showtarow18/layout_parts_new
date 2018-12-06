@@ -1,5 +1,39 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.contents {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+  font-size: 16px;
+  line-height: 22px;
+
+}
+
+.contents thead {
+  color: #fff;
+  background-color: #2244aa;
+}
+
+.contents th {
+  color: #fff;
+  background-color: #2244aa;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.contents th, .contents td {
+  padding : 10px ;
+  border: solid 1px #dedede;
+}
+
+.contents tbody tr:last-child {
+  border-top: dashed 2px #000;
+}
+
+.contents tbody tr:nth-child(even) {
+  background-color: #ecf1f2;
+}
+
 
 /* 回答はここに書いてね */

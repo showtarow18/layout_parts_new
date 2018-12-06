@@ -2,4 +2,254 @@
 
 /* 回答はここに書いてね */
 
+.small_btn {
+  font-size: 16px;
+  border-radius: 3px;
+  height: 26px;
+  padding: 0 15px;
+  line-height: 26px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.middle_btn {
+  font-size: 20px;
+  border-radius: 5px;
+  height: 32px;
+  padding: 0 20px;
+  line-height: 32px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.large_btn {
+  font-size: 24px;
+  border-radius: 7px;
+  height: 38px;
+  padding: 0 25px;
+  line-height: 38px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.common_btn {
+  color: #fff;
+  background-color: #00bcd4;
+}
+
+.error_btn {
+  color: #fff;
+  background-color: #ff4081;
+  margin-left: 10px;
+}
+
+.disabled_btn {
+  color: #fff;
+  background-color: #e5e5e5;
+  margin-left: 10px;
+}
+
+.shadow_btn {
+  color: #222;
+  background-color: #fff;
+  margin-left: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, .12);
+}
+
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.q8_form {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:#ECF1F2;
+}
+
+.form_title {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form_title:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+}
+
+.form_title p {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ECF1F2;
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.left_form {
+  width: 300px;
+  float: left;
+}
+
+.left_form ul {
+  margin-bottom: 20px;
+}
+
+.left_form li {
+  margin-top: 20px;
+}
+
+.left_form li:first-child {
+  margin-top: 0;
+}
+
+.left_form .item {
+  text-align: right;
+  float: left;
+  width: 100px;
+  line-height: 25px;
+}
+
+.left_form .item .required_text {
+  color: #F00;
+}
+
+.birth {
+  position: relative;
+}
+
+.birth:after {
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #E5E5E5;
+  border-bottom: 2px solid #E5E5E5;
+  transform: rotate(45deg);
+  content: "";
+  pointer-events: none;
+}
+
+.left_form select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #FFF;
+  font-size: 12px;
+  line-height: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.left_form .user_input {
+  float: right;
+  width: 180px;
+}
+
+.left_form .user_input input[type="text"], .birth {
+  width: 100%;
+  padding: 5px;
+  background-color: #FFF;
+  font-size: 12px;
+  line-height: 12px;
+  box-sizing: border-box;
+  border: none; 
+}
+.check_box {
+  text-align: right;
+  position: relative;
+}
+
+/*
+.left_form input[type="checkbox"] {
+  display: none;
+}
+*/
+
+.confirmation {
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+}
+
+.confirmation:before {
+position: absolute;
+top: 50%;
+left: 0;
+width: 16px;
+height: 16px;
+margin-top: -9px;
+background-color: #fff;
+border: 1px solid #ccc;
+content: "";
+}
+
+.left_form input[type="checkbox"]:checked + .confirmation:after {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  margin-top: -14px;
+  width: 8px;
+  height: 16px;
+  border-right: 3px solid #00BCD4;
+  border-bottom: 3px solid #00BCD4;
+  transform: rotate(45deg);
+  content: '';
+}
+
+.form_bottom {
+  text-align: right;
+}
+
+.form_bottom button {
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #00BCD4;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.right_form {
+  width: 380px;
+  float: right;
+}
+
+.right_form div {
+  text-align: right;
+}
+
+.right_form textarea {
+  width: 100%;
+  height: 203px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #FFF;
+  font-size: 12px;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+}
+
+
 /* 回答はここに書いてね */
