@@ -6,14 +6,14 @@
   text-align: center;
 }
 
-.text1 {
+.textCenter_textAlign {
   background-color: #e6f2ff;
   width: 90px;
   padding: 10px 0;
   display: inline-block;
 }
 
-.text2 {
+.textCenter_margin {
   text-align: center;
   background-color: #e6f2ff;
   width: 90px;
@@ -21,7 +21,7 @@
   margin: 0 auto;
 }
 
-.contents_box1 {
+.contents_box_table {
   display: table;
 }
 
@@ -31,28 +31,28 @@
   vertical-align: middle;
 }
 
-.text3 {
+.textCenter_table {
   padding: 10px;
   display: inline-block;
   background-color: #fff;
 }
 
-.contents_box2 {
+.contents_box_flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.text4 {
+.text_flex {
   padding: 10px;
   background-color: #fff;
 }
 
-.contents_box3 {
+.contents_box_noVariable {
   position: relative;
 }
 
-.text5 {
+.text_noVariable {
   position: absolute;
   top: 0;
   right: 0;
@@ -61,11 +61,11 @@
   margin: auto;
 }
 
-.contents_box4 {
+.contents_box_variable {
   position: relative;
 }
 
-.text6 {
+.text_variable {
   position: absolute;
   top: 50%;
   left: 50%;

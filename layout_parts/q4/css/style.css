@@ -1,40 +1,66 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+
+/*以下修正により追加*/
+.q4_contents_box {
+  padding: 20px
+}
+/*以上修正により追加*/
+
 .bar_box {
   display: table;
-  padding: 20px;
   width: 100%;
+  
+  /*以下修正により削除*/
+  /*
+  padding: 20px;
   box-sizing: border-box;
+  */
+  /*以上修正により削除*/
+
+  /*以下修正により追加*/
+  margin-bottom: 20px; 
+  /*以上修正により追加*/
 }
+
 
 .bar_box:last-child {
+
+  /*以下修正により削除*/
+  /*
   padding: 0 20px 20px 20px;
+  */
+  /*以上修正により削除*/
+
+  /*以下修正により追加*/
+  margin-bottom: 0;
+  /*以上修正により追加*/
 }
 
-.bar1 {
+.bar_orange {
   background-color: #fbc8b8;
   width: 100px;
 }
 
-.bar2 {
+.bar_purple {
   background-color: #e0abd9;
 }
 
-.bar3 {
+.bar_blue {
   background-color: #b6d8eb;
   width: 100px;
 }
 
-.bar4 {
+.bar_yellow {
   background-color: #e5d32e;
 }
 
-.bar5 {
+.bar_pink {
   background-color: #ec8f9a;
 }
 
-.bar6 {
+.bar_green {
   background-color: #8fdcab;
   width: 500px;
 }
@@ -46,10 +72,15 @@
 }
 
 .variable {
-  width: calc(100% - 200px);
   padding: 20px;
   text-align: center;
   display: table-cell;
+
+  /*以下修正により削除*/
+  /*
+  width: calc(100% - 200px); table-cellの場合は親要素の幅に合わせて勝手に幅が決まるためなくても可変。
+  */
+   /*以上修正により削除*/
 }
 
 /* 回答はここに書いてね */

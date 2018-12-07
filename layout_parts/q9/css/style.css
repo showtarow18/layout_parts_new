@@ -22,9 +22,9 @@
 }
 
 .text_wrap {
-  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,8));
-  width: 500px;
-  height: 333px;
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.8));
+  width: 100%; /* ピクセル指定から100％に修正。打ち間違え防止や修正をしやするため*/
+  height: 100%; /* ピクセル指定から100％に修正。打ち間違え防止や修正をしやするため*/
   padding: 20px;
   box-sizing: border-box;
   position: absolute;
@@ -39,12 +39,23 @@
 
 .text_wrap p {
   color: #fff;
-  height:293px;
   font-size: 16px;
   line-height: 16px;
+  word-break: break-all;
+  
+  /* 以下修正のため削除
+  この場合テキストを下に配置するのはposition配置がいい。修正に対応しやすくなるから
+  height:293px;
   display: table-cell;
   vertical-align: bottom;
-  word-break: break-all;
+  */
+
+  /* 以下修正のため追加 */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+   /* 以下修正のため追加 */
 }
 
 /*9-1 ここまで*/
@@ -52,11 +63,15 @@
 
 /*9-2 ここから*/
 
+
 @keyframes spin {
   100% {
     transform: rotate(360deg);
   }
 }
+
+/* 以下修正よりコメントアウト。 より簡単なローダーの作り方があるため */
+/*
 
 .q9_contents {
   width: 100px;
@@ -94,6 +109,22 @@
   transform: translate(-50%,-50%);
 }
 
+*/
 
+/* 以下修正より追加　*/
+.loader_wrap_borderVer {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-top: solid 10px #00bcd4;
+  border-right: solid 10px #ecf1f2;
+  border-bottom: solid 10px #ecf1f2; 
+  border-left: solid 10px #ecf1f2;
+  border-radius: 50%;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
 /* 回答はここに書いてね */

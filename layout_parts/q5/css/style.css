@@ -11,16 +11,18 @@
 }
 .color_box {
   width: 100px;
+  height: 100px; /*修正により追加。line-heightが高さを出してくれているが、高さはheightでちゃんと設定しよう*/
   line-height: 100px;
-  background-color: red;
+  /* background-color: red; 修正により削除。消し忘れ*/
   text-align: center;
   font-size: 30px;
   font-weight:bold;
+  position: absolute; /* 修正により追加。no1〜9までで指定したabsoluteもここでまとめる*/
 }
 
 .no1 {
   background-color: #ffefd3;
-  position: absolute;
+  /* position: absolute; 修正により削除。「.color_box」にまとめたため。*/
   top: 40px;
   left: 200px;
   z-index: 1;
@@ -28,7 +30,7 @@
 
 .no2 {
   background-color: #7084de;
-  position: absolute;
+  /* position: absolute; 修正により削除。「.color_box」にまとめたため。*/
   top: 120px;
   left: 280px;
   z-index: 2;
@@ -36,7 +38,7 @@
 
 .no3 {
   background-color: #d0ecea;
-  position: absolute;
+  /* position: absolute; 修正により削除。「.color_box」にまとめたため。*/
   top: 200px;
   left: 360px;
   z-index: 3;
@@ -44,7 +46,7 @@
 
 .no4 {
   background-color: #8b7a5e;
-  position: absolute;
+  /* position: absolute; 修正により削除。「.color_box」にまとめたため。*/
   top: 280px;
   left: 280px;
   z-index: 4;
@@ -53,7 +55,7 @@
 
 .no5 {
   background-color: #9fd6d2;
-  position: absolute;
+  /* position: absolute; 修正により削除。「.color_box」にまとめたため。*/
   top: 360px;
   left: 200px;
   z-index: 5;
@@ -61,7 +63,7 @@
 
 .no6 {
   background-color: #fffee4;
-  position: absolute;
+  /* position: absolute; 修正により削除。「.color_box」にまとめたため。*/
   top: 280px;
   left: 120px;
   z-index: 6;
@@ -69,7 +71,7 @@
 
 .no7 {
   background-color: #deae70;
-  position: absolute;
+  /* position: absolute; 修正により削除。「.color_box」にまとめたため。*/
   top: 200px;
   left: 40px;
   z-index: 7;
@@ -77,7 +79,7 @@
 
 .no8 {
   background-color: #de70cf;
-  position: absolute;
+  /* position: absolute; 修正により削除。「.color_box」にまとめたため。*/
   top: 120px;
   left: 120px;
   z-index: 8;

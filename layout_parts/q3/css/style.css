@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+
 .contents {
   width: 100%;
   text-align: center;
@@ -10,10 +11,13 @@
 
 }
 
+/* 以下修正により削除*/
+/* thタグで色を指定しているので重複している
 .contents thead {
   color: #fff;
   background-color: #2244aa;
 }
+*/
 
 .contents th {
   color: #fff;
@@ -34,6 +38,5 @@
 .contents tbody tr:nth-child(even) {
   background-color: #ecf1f2;
 }
-
 
 /* 回答はここに書いてね */

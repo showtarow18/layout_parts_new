@@ -11,14 +11,29 @@
 .contents {
   width: 940px;
   margin: 0 auto;
-  background-color: #eff3f4
+  background-color: #eff3f4;
+
+  /*以下修正により追加*/
+  padding: 20px;
+  box-sizing: border-box;
+  /*以上修正により追加*/
 }
 
 .contents_box {
   padding: 20px;
   background-color: #3274ae;
   float: left;
-  margin: 20px 0 20px 20px;
+
+  /*以下修正により削除*/
+  /*margin: 20px 0 20px 20px;*/
+  /*以上修正により削除*/
+  /*以下修正により追加*/
+  margin-left: 20px;
+  /*以上修正により追加*/
+}
+
+.contents_box:first-child {
+  margin-left: 0;
 }
 
 .text {

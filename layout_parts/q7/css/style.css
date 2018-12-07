@@ -76,10 +76,15 @@
 
 .q7-5_variable_box {
   display: inline-block;
-  width: calc(100% - 350px);
   letter-spacing: 0;
-  margin-left: 50px;
   box-sizing: border-box; 
+  /*width: calc(100% - 350px); calcでもできるがここの問題はネガティヴマージンのやり方にもトライ */
+  /*margin-left: 50px; calcでもできるがここの問題はネガティヴマージンのやり方にもトライ */
+  /*以下ネガティブマージンの方のやり方*/
+  width: 100%;
+  margin-left: -300px; /* 左の要素の幅の300pxにしている */
+  padding-left: 350px; /* 要素の間の余白分の50pxを300に追加している */
+   /*以上ネガティブマージンの方のやり方*/
 }
 
 /* 回答はここに書いてね */

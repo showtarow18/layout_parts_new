@@ -12,29 +12,46 @@
 }
 
 .textbox:before {
-  content: "";
+  content: ""; 
+  position: absolute;
+  bottom: -45px;
+  left: 30px;
+  /* 修正よりコメントアウト。四角を重ねる方法だったが、三角を作るやり方にトライ
   width: 20px;
   height: 20px;
-  display: block;
+  background-color: #fff;
   border: solid 5px #222;
   transform: rotate(45deg);
-  position: absolute;
-  bottom: -19px;
-  left: 35px;
-  background-color: #fff;
+  */
+
+  /* 以下修正により追加*/
+  width: 0;
+  height: 0;
+  border: solid 20px transparent;
+  border-top-color: #222;
+  /* 以上修正により追加 */
 }
+
 
 .textbox:after {
   content: "";
+  position: absolute;
+  bottom: -38px;
+  left: 30px;
+  /*
   width: 16px;
   height: 16px;
-  display: block;
-  border: solid 5px #fff;
-  transform: rotate(45deg);
-  position: absolute;
-  bottom: -13px;
-  left: 37px;
   background-color: #fff;
+  border: solid 5px #fff;
+  transform: rotate(45deg);  
+  */
+
+  /* 以下修正により追加 */
+  width: 0;
+  height: 0;
+  border: solid 20px transparent;
+  border-top-color: #fff;
+  /* 以上修正により追加 */
 }
 
 .textbox p {

@@ -115,10 +115,50 @@
   float: left;
   width: 100px;
   line-height: 25px;
+
 }
 
 .left_form .item .required_text {
   color: #F00;
+}
+
+.radio_btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.radio_btn input {
+  display: none;
+}
+
+.radio_btn span {
+  padding: 3px 3px 3px 20px;
+  display: inline-block;
+}
+
+.radio_btn span:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top:0px;
+  left:0px;
+  Z-index: 3;
+}
+
+.radio_btn input:checked + span:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00BCD4;
+  position: absolute;
+  top:3px;
+  left:3px;
+  z-index: 4;
 }
 
 .birth {
@@ -141,23 +181,19 @@
 
 .left_form select {
   width: 100%;
-  padding: 5px;
-  border-radius: 3px;
-  background-color: #FFF;
   font-size: 12px;
   line-height: 12px;
   box-sizing: border-box;
   cursor: pointer;
-
   padding: 0;
   background: none;
   border: none;
-  border-radius: 0;
-  font-size: 16px;
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+
 }
 
 .left_form .user_input {
@@ -165,25 +201,31 @@
   width: 180px;
 }
 
-.left_form .user_input input[type="text"], .birth {
+.left_form .user_input input[type="text"], .user_input input[type="email"], .birth {
   width: 100%;
   padding: 5px;
   background-color: #FFF;
   font-size: 12px;
   line-height: 12px;
+  border-radius: 3px;
   box-sizing: border-box;
-  border: none; 
+  border: none;
 }
+
+.left_form .user_input input[type="text"]:focus, .user_input input[type="email"]:focus, .right_form textarea:focus {
+  box-shadow: 0 0 10px 0 #00BCD4;
+  outline: none;
+}
+
 .check_box {
   text-align: right;
   position: relative;
 }
 
-/*
 .left_form input[type="checkbox"] {
   display: none;
 }
-*/
+
 
 .confirmation {
   position: relative;
@@ -228,6 +270,7 @@ content: "";
   cursor: pointer;
   font-size: 16px;
   line-height: 26px;
+  border: none;
 }
 
 .right_form {
@@ -250,6 +293,8 @@ content: "";
   resize: none;
   border: none;
 }
+
+
 
 
 /* 回答はここに書いてね */
