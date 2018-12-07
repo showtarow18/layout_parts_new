@@ -273,6 +273,15 @@ content: "";
   border: none;
 }
 
+.form_bottom button:active {
+  background-color: #fff;
+  color: #00BCD4;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
 .right_form {
   width: 380px;
   float: right;
